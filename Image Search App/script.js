@@ -19,7 +19,8 @@ const getData = async (searchValue, pageNo) => {
        showData.innerHTML=`
        <h1>Please Search</h1>
        `
-   }else{
+   }
+   else{
        document.querySelector(".loadMore").style.display="block";
    }
     
