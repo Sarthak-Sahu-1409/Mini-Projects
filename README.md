@@ -12,3 +12,6 @@ Mini-Projects for implementing Tech-Tools.
 11. React JS
 12. Node JS
 13. Assembly
+14. Spring/SpringBoot
+15. PostMan
+16. PostGRE
