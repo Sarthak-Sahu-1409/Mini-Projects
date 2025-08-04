@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Fashion: The True Cost & The Path Forward</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to extend Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #E5E7EB; /* Light text */
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900/50 backdrop-blur-lg border-b border-gray-700/50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-black tracking-tighter text-white">FashionForward</div>
+            <ul class="hidden md:flex space-x-8 text-sm font-bold tracking-wide text-gray-300">
+                <li><a href="#impacts" class="hover:text-cyan-400 transition-colors duration-300">Impacts</a></li>
+                <li><a href="#solutions" class="hover:text-cyan-400 transition-colors duration-300">Solutions</a></li>
+                <li><a href="#activism" class="hover:text-cyan-400 transition-colors duration-300">Activism</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center text-white relative px-4" style="background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url(https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop) no-repeat center center/cover;">
+            <div class="container mx-auto pt-20">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tighter leading-tight mb-4 fade-in">
+                    <span class="text-cyan-400">Fast Fashion:</span> Unraveled
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-12 fade-in" style="transition-delay: 100ms;">
+                    The rapid production of trendy, inexpensive clothing. Brands compress design and manufacturing to release new collections constantly, creating a global culture of disposability.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto fade-in" style="transition-delay: 200ms;">
+                    <div class="glassmorphism p-4 rounded-xl">
+                        <h4 class="text-3xl md:text-4xl font-bold">$1.7T</h4>
+                        <p class="text-xs md:text-sm text-gray-400 mt-1">Global Market (2023)</p>
+                    </div>
+                    <div class="glassmorphism p-4 rounded-xl">
+                        <h4 class="text-3xl md:text-4xl font-bold">2x</h4>
+                        <p class="text-xs md:text-sm text-gray-400 mt-1">Production Doubled</p>
+                    </div>
+                    <div class="glassmorphism p-4 rounded-xl">
+                        <h4 class="text-3xl md:text-4xl font-bold">~7</h4>
+                        <p class="text-xs md:text-sm text-gray-400 mt-1">Wears Per Garment</p>
+                    </div>
+                    <div class="glassmorphism p-4 rounded-xl">
+                        <h4 class="text-3xl md:text-4xl font-bold">3 in 5</h4>
+                        <p class="text-xs md:text-sm text-gray-400 mt-1">Garments End as Waste</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTS SECTION -->
+        <section id="impacts" class="py-20 md:py-32 bg-gray-100 text-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900">The True Cost to Planet & People</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Water Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in">
+                        <div class="text-4xl mb-4 text-cyan-500">💧</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Water Use & Pollution</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">&#10148;</span><span><b>2,000 gallons</b> of water for one pair of jeans.</span></li>
+                            <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">&#10148;</span><span>Textile dyeing is the <b>#2 industrial water polluter</b> globally.</span></li>
+                            <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">&#10148;</span><span><b>500,000 tons</b> of microfibers enter oceans annually.</span></li>
+                        </ul>
+                    </div>
+                    <!-- Carbon Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in" style="transition-delay: 100ms;">
+                        <div class="text-4xl mb-4 text-orange-500">🌍</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Carbon Footprint & Waste</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-orange-500 mr-3 mt-1">&#10148;</span><span>Contributes <b>~10% of global CO₂ emissions</b>—more than flights & shipping.</span></li>
+                            <li class="flex items-start"><span class="text-orange-500 mr-3 mt-1">&#10148;</span><span><b>85% of all textiles</b> are landfilled or incinerated yearly.</span></li>
+                            <li class="flex items-start"><span class="text-orange-500 mr-3 mt-1">&#10148;</span><span>Only <b>~8%</b> of textile fibers are actually recycled.</span></li>
+                        </ul>
+                    </div>
+                    <!-- Labor Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in" style="transition-delay: 200ms;">
+                        <div class="text-4xl mb-4 text-red-500">🧵</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Social Impact & Labor</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10148;</span><span>Fewer than <b>2% of 75M garment workers</b> earn a living wage.</span></li>
+                            <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10148;</span><span>Unsafe conditions led to tragedies like the <b>Rana Plaza collapse</b>.</span></li>
+                            <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10148;</span><span>Cases of <b>child labor and unpaid wages</b> persist in supply chains.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTIONS SECTION -->
+        <section id="solutions" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-white">Stitching a Better Future</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glassmorphism p-8 rounded-2xl fade-in">
+                        <h4 class="text-xl font-bold mb-4 text-cyan-300">Circular Economy Initiatives</h4>
+                        <p class="text-gray-300">Brands like Patagonia are proving resale is profitable. Industry-wide projects like the "Jeans Redesign" are creating clothing that's easier to recycle from the start.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-cyan-900/50 border border-cyan-700 fade-in" style="transition-delay: 100ms;">
+                        <h4 class="text-xl font-bold mb-4 text-cyan-300">🇮🇳 India's Circular Potential</h4>
+                        <p class="text-gray-300">India generates ~7.7 million tonnes of textile waste annually. By formalizing sorting, <b>1.38 million tonnes</b> could be reclaimed, generating up to <b>₹1,348 crore</b>.</p>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-2xl fade-in" style="transition-delay: 200ms;">
+                        <h4 class="text-xl font-bold mb-4 text-cyan-300">Material Innovations</h4>
+                        <p class="text-gray-300">New materials like <b>Mycelium leather</b> (from fungi), <b>Piñatex</b> (from pineapples), and recycled fibers are cutting resource use and offering sustainable alternatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVISM SECTION -->
+        <section id="activism" class="py-20 md:py-32 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto fade-in">
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900">Your Voice, Your Power</h2>
+                    <p class="mt-4 mb-8 text-lg text-gray-600">
+                        A new generation is demanding change. Through powerful campaigns and student-led action on campus, we are shifting the narrative. By promoting reuse, demanding transparency, and choosing consciously, we can collectively rewrite the future of fashion.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="bg-cyan-500 text-white font-bold py-2 px-5 rounded-full shadow-lg">#WhoMadeMyClothes</span>
+                        <span class="bg-gray-800 text-white font-bold py-2 px-5 rounded-full shadow-lg">#SwapNotShop</span>
+                        <span class="bg-cyan-500 text-white font-bold py-2 px-5 rounded-full shadow-lg">#WearYourValues</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>Information sourced from McKinsey, Earth.org, Fashion for Good, and others. &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple fade-in on scroll script
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
